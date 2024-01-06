@@ -1,0 +1,10 @@
+class Solution {
+    public int finalValueAfterOperations(String[] operations) {
+        int x=0;
+        for(String i:operations)
+        {
+            x+=i.equals("X++")||i.equals("++X") ? 1 : -1;            
+        }
+        return x;
+    }
+}
